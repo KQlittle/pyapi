@@ -63,7 +63,7 @@ def apiinfo():
 
 @app.route('/')
 def statistics():
-    return render_template('pie-simple.html')
+    return render_template('index.html')
 
 @app.route('/bili')
 def bili():
