@@ -4,5 +4,6 @@ RUN apt-get update && \
     apt-get install -y procps curl vim
 ENV TZ Asia/Shanghai
 COPY . /app
+EXPOSE 8080
 RUN pip install -r requirements.txt
 CMD ["python3", "/app/web.py"]
