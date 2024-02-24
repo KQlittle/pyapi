@@ -372,4 +372,4 @@ def car_id():
     return Response(json.dumps(data, ensure_ascii=False), mimetype='application/json')
 if __name__ == "__main__":
     """初始化,debug=True"""
-    app.run(host='0.0.0.0', port=9685,debug=True)
+    app.run(host='0.0.0.0', port=8080,debug=True)
